@@ -131,11 +131,6 @@ FABIAN/
 - **Contraseña**: `12345678`
 - **Rol**: Administrador completo
 
-### **Subadministrador**
-- **Correo**: `springrandalf@gmail.com`
-- **Contraseña**: `12345678`
-- **Rol**: Administrador con permisos limitados
-
 ### **Cliente de Prueba**
 - **Correo**: `juanjoel23@gmail.com`
 - **Contraseña**: `12345678`
@@ -217,32 +212,3 @@ FABIAN/
 
 ---
 
-## 📞 Información de Contacto
-
-**Desarrollador**: Alexis Josue Lopez Salinas
-**Email**: [lopez.salinas.alexis02@gmail.com](mailto:lopez.salinas.alexis02@gmail.com)
-**Teléfono**: +51 942 308 812
-
-**Empresa**: FABIAN Publicidad
-**Especialidad**: Productos promocionales y publicitarios personalizados
-
----
-
-## 📜 Licencia
-
-Este proyecto está bajo la **Licencia MIT**. Consulta el archivo `LICENSE` para más detalles.
-
----
-
-## 🙏 Agradecimientos
-
-- **Bootstrap Team** por el excelente framework CSS
-- **jQuery Team** por la librería JavaScript
-- **Font Awesome** por los iconos profesionales
-- **Comunidad PHP** por el soporte y recursos
-
----
-
-**⭐ Si te gusta este proyecto, ¡dale una estrella!**
-
-**[⬆️ Volver al inicio](#-fabian-publicidad)**
