@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 01, 2025 at 03:14 PM
+-- Generation Time: Oct 01, 2025 at 05:51 PM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.16
 
@@ -83,8 +83,7 @@ CREATE TABLE `clientes` (
 INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellidos`, `email`, `telefono`, `direccion`, `password`, `fecha_registro`, `foto_perfil`, `estado`) VALUES
 (1, 'Juan', 'Pérez García', 'juan.perez@email.com', '+51 999 888 777', 'Av. Principal 123, Lima', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '2023-01-15 10:30:00', NULL, 1),
 (2, 'María', 'González López', 'maria.gonzalez@email.com', '+51 987 654 321', 'Jr. Los Olivos 456, Lima', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '2023-02-20 14:15:00', NULL, 1),
-(3, 'Alexis Josue', 'Lopez Salinas', 'lopez.salinas.alexis02@gmail.com', '942308812', 'Calle avelardo lote 12 mz34', '$2y$10$cwX7fkSSroV76434e5dlju56QQczK0nxuR6P4MJiZkUsrOs2UAUAu', '2025-09-06 03:23:50', NULL, 1),
-(4, 'Alexis Josue', 'Lopez Salinas', 'alexisjosuelopezsalinas77@gmail.com', '942308812', 'Calle avelardo lote 12 mz34', '$2y$10$hV61MDuz6Ml3Lplj5JQBnuv9tmPOahmBK27uv87ccFvabqLT8uvJa', '2025-10-01 02:16:22', NULL, 1);
+(5, 'Juan Joel', 'Berru Castillo', 'juanjoel23@gmail.com', '+51942308812', 'Calle principal Av. dorado Mz50', '$2y$10$kd4Df5Y2iWqkoqXgYiQO3Ok/3CvThZnRTr1bYQ/1nU29X81abV9rG', '2025-10-01 21:58:54', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -100,15 +99,6 @@ CREATE TABLE `detalle_venta` (
   `precio_unitario` decimal(10,2) NOT NULL,
   `subtotal` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `detalle_venta`
---
-
-INSERT INTO `detalle_venta` (`id_detalle_venta`, `id_venta`, `id_producto`, `cantidad`, `precio_unitario`, `subtotal`) VALUES
-(5, 6, 24, 2, 25.00, 50.00),
-(6, 6, 23, 1, 55.00, 55.00),
-(7, 7, 20, 1, 65.00, 65.00);
 
 -- --------------------------------------------------------
 
@@ -150,7 +140,17 @@ INSERT INTO `productos` (`id_producto`, `id_categoria`, `nombre`, `descripcion`,
 (22, 14, 'Bolso Ejecutivo', 'Bolso de cuero sintético para laptop', 85.00, 40, 'assets/lapiceros.png', 1, 1, '2025-09-30 21:09:02'),
 (23, 15, 'Mochila Promocional', 'Mochila con logo bordado', 55.00, 100, 'assets/lapiceros.png', 1, 1, '2025-09-30 21:09:02'),
 (24, 16, 'Polo Textil Personalizado', 'Polo de algodón con estampado', 25.00, 20, 'assets/lapiceros.png', 0, 1, '2025-09-30 21:09:02'),
-(25, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.00, 80, 'assets/lapiceros.png', 1, 1, '2025-09-30 21:09:02');
+(25, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.00, 80, 'assets/lapiceros.png', 1, 1, '2025-09-30 21:09:02'),
+(26, 17, 'Lonchera Térmica 033', 'Lonchera con aislamiento térmico', 32.00, 80, 'uploads/productos/default.jpg', 0, 1, '2025-10-01 16:41:11'),
+(27, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.00, 80, 'uploads/productos/20251001164200.jpg', 0, 1, '2025-10-01 16:42:00'),
+(28, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.00, 80, 'uploads/productos/20251001164203.jpg', 0, 1, '2025-10-01 16:42:03'),
+(29, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.00, 80, 'uploads/productos/20251001164204.jpg', 0, 1, '2025-10-01 16:42:04'),
+(30, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.00, 80, 'uploads/productos/20251001164204.jpg', 0, 1, '2025-10-01 16:42:04'),
+(31, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.00, 80, 'uploads/productos/20251001164205.jpg', 0, 1, '2025-10-01 16:42:05'),
+(32, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.00, 80, 'uploads/productos/20251001164205.jpg', 0, 1, '2025-10-01 16:42:05'),
+(33, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.99, 80, 'uploads/productos/20251001164216.jpg', 0, 1, '2025-10-01 16:42:16'),
+(34, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.99, 80, 'uploads/productos/20251001164216.jpg', 0, 1, '2025-10-01 16:42:16'),
+(35, 17, 'Lonchera Térmica', 'Lonchera con aislamiento térmico', 32.00, 80, 'uploads/productos/default.jpg', 0, 1, '2025-10-01 16:42:29');
 
 -- --------------------------------------------------------
 
@@ -176,9 +176,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`idusuario`, `nombre`, `direccion`, `telefono`, `email`, `password`, `rol`, `permisos`, `estado`, `fecha_creacion`) VALUES
-(1, 'Administrador', 'Oficina Principal', '+51 999 888 777', 'admin@miniplus.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', NULL, 1, '2023-01-01 15:00:00'),
-(2, 'Alexis Josue Lopez Salinas', '', '942308812', 'springrandalf@gmail.com', '$2y$10$UufPhFzQ2EXJD.5/jw/vPOMe7.NXTJIy4.G.2DhyUdLZuzF.hUKpa', 'admin', NULL, 1, '2025-09-05 22:15:37'),
-(3, 'Rafael Eduardo', '', '', 'alexisjosuelopezsalinas77@gmail.com', '$2y$10$a.XVvA7ZAO9mdqamcAesmO.k2iH4bwAN1tnX.KDM/IocT9Q4hrtiG', 'subadmin', '{\"productos\":1,\"categorias\":0,\"clientes\":0,\"ventas\":1,\"reportes\":1,\"configuracion\":0}', 1, '2025-09-05 22:16:02'),
+(3, 'Rafael Eduardo', '', '', 'alexisjosuelopezsalinas77@gmail.com', '$2y$10$a.XVvA7ZAO9mdqamcAesmO.k2iH4bwAN1tnX.KDM/IocT9Q4hrtiG', 'subadmin', '{\"productos\":1,\"categorias\":0,\"clientes\":0,\"ventas\":1,\"reportes\":1,\"configuracion\":0}', 0, '2025-09-05 22:16:02'),
 (4, 'Luis Alvarado Gomez', '', '', 'alvaradogomez23@gmail.com', '$2y$10$uctzJskL/P17FTzWKq.6X.f./3y7pcsDy9nMDbmBAk85QxcYYVsTO', 'admin', NULL, 1, '2025-09-30 21:30:02');
 
 -- --------------------------------------------------------
@@ -202,12 +200,8 @@ CREATE TABLE `venta` (
 
 INSERT INTO `venta` (`id_venta`, `id_cliente`, `fecha`, `total`, `estado`, `metodo_pago`) VALUES
 (1, 1, '2023-03-15 16:30:00', 13.90, 'completada', 'efectivo'),
-(2, 2, '2023-03-16 10:45:00', 17.90, 'completada', 'tarjeta'),
-(3, 1, '2023-03-17 14:20:00', 25.50, 'completada', 'efectivo'),
-(4, 4, '2025-10-01 03:19:30', 105.00, 'completada', 'yape'),
-(5, 4, '2025-10-01 03:19:33', 105.00, 'completada', 'yape'),
-(6, 4, '2025-10-01 03:21:11', 105.00, 'completada', 'yape'),
-(7, 4, '2025-10-01 19:34:15', 75.00, 'completada', 'yape');
+(2, 2, '2023-03-16 10:45:00', 17.90, 'cancelada', 'tarjeta'),
+(3, 1, '2023-03-17 14:20:00', 25.50, 'completada', 'efectivo');
 
 --
 -- Indexes for dumped tables
@@ -269,7 +263,7 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT for table `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id_cliente` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_cliente` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `detalle_venta`
@@ -281,7 +275,7 @@ ALTER TABLE `detalle_venta`
 -- AUTO_INCREMENT for table `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id_producto` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_producto` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `usuarios`
