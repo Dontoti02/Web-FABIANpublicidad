@@ -1,0 +1,173 @@
+/* Admin Panel Styles - Blue Theme */
+.sidebar {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    width: 280px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.content {
+    margin-left: 280px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.nav-link {
+    border-radius: 10px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo Styles */
+.logo-admin {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo-admin:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Statistics Cards - Blue Theme */
+.stat-card {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+}
+
+.stat-card-2 {
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+    color: white;
+}
+
+.stat-card-3 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.stat-card-4 {
+    background: linear-gradient(135deg, #1e88e5 0%, #42a5f5 100%);
+    color: white;
+}
+
+/* Blue Theme Elements */
+.btn-primary {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 2px solid #1e3c72;
+}
+
+.table-light {
+    background-color: #e3f2fd !important;
+}
+
+.badge.bg-primary {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+}
+
+.badge.bg-info {
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%) !important;
+}
+
+.text-primary {
+    color: #1e3c72 !important;
+}
+
+.border-primary {
+    border-color: #1e3c72 !important;
+}
+
+/* Modal Headers */
+.modal-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+/* Form Controls Focus */
+.form-control:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 0 0.2rem rgba(42, 82, 152, 0.25);
+}
+
+/* Dropdown Menus */
+.dropdown-menu {
+    border: 1px solid #2a5298;
+}
+
+.dropdown-item:hover {
+    background-color: #e3f2fd;
+    color: #1e3c72;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+    
+    .logo-admin {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .sidebar {
+        display: none;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+}
